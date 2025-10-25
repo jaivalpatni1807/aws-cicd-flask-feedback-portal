@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Feedback Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background-color: #f7f7f7; margin: 40px; }
+    h1 { color: #0073bb; }
+    ul { list-style-type: none; padding: 0; }
+    li { background: #fff; margin: 8px auto; padding: 10px; border-radius: 6px; width: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    a { color: #0073bb; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Employee Feedback Portal</h1>
+  <a href="/feedback">Submit Feedback</a>
+  <h3>All Feedback:</h3>
+  <ul>
+    {% for item in feedback %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
